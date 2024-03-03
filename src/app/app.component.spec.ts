@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'chinese-ministry-web' title`, () => {
+  it(`should have the 'ChienseMinistry' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('chinese-ministry-web');
+    expect(app.title).toEqual('ChienseMinistry');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, chinese-ministry-web');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ChienseMinistry');
   });
 });
